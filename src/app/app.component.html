@@ -13,14 +13,42 @@
   </mat-toolbar-row>
 </mat-toolbar>
 
-<div class="main-container">    
+<div class="main-container">
+
+  <div style="display:flex; flex-wrap: wrap; margin-bottom: 80px;">
+    <div style="width: 40%; flex: 1 0 auto; padding-right: 10px;">
+      <mat-card style="height: 100%;">
+        <mat-card-title>
+          Title #1
+        </mat-card-title>
+        <mat-divider></mat-divider>
+        <br />
+        <mat-card-content>
+          Content #1
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div style="width: 40%; flex: 1 0 auto; padding-left: 10px;">
+      <mat-card style="height: 100%;">
+        <mat-card-title>
+          Title #2
+        </mat-card-title>
+        <mat-divider></mat-divider>
+        <br />
+        <mat-card-content>
+          Content #2
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
 
   <mat-card>
     <mat-card-title>
       General settings
       <span style="float:right;">
         <span class="status">
-          Status : <mat-icon>thumb_up</mat-icon>
+          Status :
+          <mat-icon>thumb_up</mat-icon>
         </span>
         <a mat-button matTooltip="This will restart the device" matTooltipPosition="below" color="warn">
           <mat-icon>power_settings_new</mat-icon>
@@ -42,5 +70,5 @@
       </form>
     </mat-card-content>
   </mat-card>
-  
+
 </div>
